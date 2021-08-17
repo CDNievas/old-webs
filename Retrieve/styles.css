@@ -1,0 +1,263 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:url(./images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+::selection{
+	color:#a4a4a4;
+	background:#080808;
+	text-shadow:none;
+}
+
+::-moz-selection{
+	color:#a4a4a4;
+	background:#080808;
+	text-shadow:none;
+}
+
+@font-face{
+	font-family:"Orator Std";
+	src: url(fonts/Orator.otf);
+}
+
+#menu{
+	height:auto;
+	width:auto;
+	display:block;
+	float:right;
+	margin-top:10px;
+}
+
+#menu ul {
+	height:50px;
+	width:400px;
+	list-style:none;
+	border-bottom:4px solid #f1f1f1;
+	padding-right:120px;
+	opacity:0.7;
+}
+
+#menu li{
+	height:50px;
+	float:left;
+	display:block;
+	padding:0px 20px 20px 0px;
+	font-family:Orator Std;
+	font-size:40px;
+	padding-bottom:-5px;
+	margin-top:-3.5px;
+}
+
+#menu a:link, #menu a:visited{
+	color:#f1f1f1;
+	text-decoration:none;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-ms-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s
+}
+
+#menu a:hover{
+	color:#961818;
+	border-bottom:4px solid #961818;
+	opacity:1.0;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-ms-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s
+}
+
+#center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width:600px;
+	height:550px;
+	margin-top: -275px; 
+	margin-left: -300px;
+}
+
+#circle{
+	position: absolute;
+	top:50%;
+	left:50%;
+	width:300px;
+	height:300px;
+	margin-top: -150px; 
+	margin-left: -150px;
+	background-color:rgba(241, 241, 241, 0.6);
+	border-radius:150px;
+	-webkit-border-radius:150px;
+	-moz-border-radius:150px;
+	font-family:Orator Std;
+	color:#909090;
+	text-shadow: 0px -1px 0px #343434;
+	font-size:40px;
+	text-align:center;
+	box-shadow: 0px 1px 3px #343434;
+}
+
+#subcircle{
+	width:280px;
+	height:280px;
+	margin-top:5px;
+	margin-left:5px;
+	border-radius:150px;
+	-webkit-border-radius:150px;
+	-moz-border-radius:150px;
+}
+
+#circle ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#circle ul li{
+	width:290px;
+	height:290px;
+	overflow:hidden;
+}
+
+img{
+	border-radius:150px;
+	-webkit-border-radius:150px;
+	-moz-border-radius:150px;
+	box-shadow: 0px 1px 3px #343434;
+}
+
+img.facebook{
+	position:relative;
+	float:left;
+	top:175;
+	left:25;
+}
+
+img.youtube{
+	position:relative;
+	float:right;
+	top:175;
+	right:25;
+}
+
+img.email{
+	position:relative;
+	top:410;
+}
+
+img.twitter{
+	position:relative;
+}
+
+a:link.circle, a:visited.circle{
+	opacity:0.4;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-ms-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s
+}
+
+a:hover.circle{
+	opacity:1.0;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-ms-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s
+}
+
+#foot{
+	height:50px;
+	float:left;
+	display:block;
+	position:fixed;
+	font-family:Orator Std;
+	font-size:40px;
+	padding-bottom:-5px;
+	margin-top:-3.5px;
+	color:#f1f1f1;
+	bottom:20;
+	padding-left:120px;
+	padding-right:20px;
+	border-bottom:4px solid #f1f1f1;
+	opacity:0.7;
+}
+
+#foot a:link, #foot a:visited{
+	text-decoration:none;
+	color:#f1f1f1;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-ms-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s
+}
+
+#foot a:hover{
+	color:#961818;
+	opacity:1.0;
+}
+
+input[type=text]{
+	background:rgba(46, 46, 46, 0.4);
+	width:200px;
+	height:35px;
+	padding:5px;
+	border:0;
+	margin-bottom:20px;
+	color:#f1f1f1;
+	font-family:Segoe UI;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-ms-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s
+}
+
+textarea{
+	background:rgba(46, 46, 46, 0.4);
+	width:500px;
+	height:300px;
+	padding:5px;
+	border:0;
+	margin-bottom:20px;
+	color:#f1f1f1;
+	resize:none;
+	font-family:Segoe UI;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-ms-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s
+}
+
+input[type=text]:focus, textarea:focus{
+	background:rgba(46, 46, 46, 0.6);
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-ms-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s;
+	outline:0;
+}
+
+input[type=submit]{
+	background:rgba(46, 46, 46, 0.4);
+	padding:5;
+	font-family:Segoe UI;
+	color:#f1f1f1;
+	border:0;
+	height:35px;
+	width:75px;
+}

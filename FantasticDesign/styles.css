@@ -1,0 +1,277 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-image:url(./images/bg.png);
+	background-repeat: repeat-x,y
+}
+
+.clearfix{
+	height:auto;
+	width:auto;
+	background:transparent;
+	clear:both;
+}
+
+#head{
+	margin:0 auto;
+	height:120px;
+	width:920px;
+	display:block;
+	margin-top:10px;
+	border-bottom:2px solid #848484;
+}
+
+h1.slogan{
+	color:#848484;
+	font-family:Segoe UI;
+	font-size:16px;
+	float:right;
+	font-weight:normal;
+	margin-top:60px;
+	margin-right:400px;
+}
+
+#wrap{
+	margin:0 auto;
+	padding-bottom:20px;
+	width:920px;
+	height:auto;
+	display:block;
+}
+
+#menu{
+	display:block;
+	float:left;
+	height:auto;
+	width:130px;
+}
+
+ul.menu{
+	display:block;
+	height:auto;
+	width:120px;
+	list-style:none;
+	background:rgba(242,242,242, 0.4);
+}
+
+li.menu{
+	display:block;
+	margin:0 auto;
+	width:120px;
+	height:40px;
+	text-align:center; 
+	line-height:40px;
+	font-family:Segoe UI;
+	font-size:13px;
+	color:#7F7F7F;
+	position:relative
+}
+
+ul.menu ul
+{
+   height:auto;
+   width:120px;
+   position:absolute; /* Esta posición es relativa al <li> que contiene a este <ul> */
+   left:123px; /* Para que no monte sobre el <li> */
+   top:-1px;
+   display:none;
+   list-style:none;
+   background:rgba(242,242,242, 0.4);
+   border-top:1px solid #D2D2D2;
+   border-bottom:1px solid #D2D2D2;
+}
+
+ul.menu li:hover > ul
+{
+   display:block;
+}
+
+a:link.menu{
+	text-decoration:none; 
+	display:block; 
+	width:120px; 
+	height:100%;
+	border-right:2px solid #848484;
+	font-family:Segoe UI;
+	font-size:13px;
+	color:#A4A4A4;
+}
+
+a:visited.menu{
+	text-decoration:none; 
+	color:#A4A4A4; 
+	display:block; 
+	width:120px; 
+	height:100%;
+	font-family:Segoe UI;
+	font-size:13px;
+	border-right:2px solid #848484;
+}
+
+a:hover.menu{
+	text-decoration:none; 
+	color:#929292; 
+	display:block; 
+	width:120px; 
+	height:100%;
+	font-family:Segoe UI;
+	font-size:13px;
+	border-right:2px solid #B40404;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-ms-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s
+}
+
+a:link.submenu{
+	text-decoration:none; 
+	color:#A4A4A4; 
+	display:block; 
+	width:120px; 
+	height:100%;
+	font-family:Segoe UI;
+	font-size:13px;
+	border-right:2px solid #848484;
+}
+
+a:visited.submenu{
+	text-decoration:none; 
+	color:#A4A4A4; 
+	display:block; 
+	width:120px; 
+	height:100%;
+	font-family:Segoe UI;
+	font-size:13px;
+	border-right:2px solid #848484;
+}
+
+a:hover.submenu{
+	text-decoration:none; 
+	color:#929292; 
+	display:block; 
+	width:120px; 
+	height:100%;
+	font-family:Segoe UI;
+	font-size:13px;
+	border-right:2px solid #B40404;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-ms-transition:0.2s;
+	-o-transition:0.2s;
+	transition:0.2s
+}
+
+#content{
+	display:block;
+	height:auto;
+	width:790px;
+	float:right;
+	margin-bottom:20px;
+}
+
+p.title{
+	color:#B40404;
+	font-family:Segoe UI;
+	font-size:15px;
+	margin-left:30px;
+	margin-top:30px;
+}
+
+p.text{
+	color:#848484;
+	font-family:Segoe UI;
+	font-size:12px;
+	margin-top:10px;
+	margin-left:60px;
+	margin-right:60px;
+}
+
+#footer{
+	margin:0 auto;
+	margin-top:20px;
+	width:920px;
+	height:75px;
+	border-top:2px solid #848484;
+	margin-bottom:20px;
+}
+
+p.footer{
+	margin:0 auto;
+	margin-top:35px;
+	color:#585858;
+	font-size:14px;
+	font-family:Segoe UI;
+}
+
+a:link.footer{
+	font-size:14px;
+	font-family:Segoe UI;
+	color:#585858;
+	text-decoration:none;
+}
+
+a:visited.footer{
+	font-size:14px;
+	font-family:Segoe UI;
+	color:#585858;
+	text-decoration:none;
+}
+
+a:hover.footer{
+	font-size:14px;
+	font-family:Segoe UI;
+	color:#B40404;
+	text-decoration:none;
+	-webkit-transition:0.4s;
+	-moz-transition:0.4s;
+	-ms-transition:0.4s;
+	-o-transition:0.4s;
+	transition:0.4s;
+}
+
+input[type=text]{
+	background-color:rgba(180, 180, 180, 0.6);
+	border:0;
+	font-size:13px;
+	font-family:Segoe UI;
+	color:#f1f1f1;
+	height:35px;
+	padding:5px 5px 5px 5px;
+	width:200px;
+	margin-top:10px;
+}
+
+input[type=submit]{
+	background-color:rgba(180, 180, 180, 0.6);
+	border:0;
+	font-size:13px;
+	font-family:Segoe UI;
+	color:#f1f1f1;
+	height:35px;
+	padding:5px 5px 5px 5px;
+	width:200px;
+	margin-top:10px;
+}
+
+input:focus, textarea:focus{
+	outline:0;
+}
+
+#info{
+	height:auto;
+	width:350px;
+	display:block;
+	float:right;
+	background-color:rgba(180, 180, 180, 0.6);
+	padding:20px 20px 20px 20px;
+	margin-right:80px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	color:#f1f1f1;
+	font-family:Segoe UI;
+}

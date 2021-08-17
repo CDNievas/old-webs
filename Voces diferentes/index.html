@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title>Voces Diferentes</title>
+		<link rel="stylesheet" href="./estilos.css" type="text/css">
+		<link rel="shortcut icon" href="./Imagenes/icono.ico">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="./jquery.js"></script>
+		<script type="text/javascript"> 
+			$(document).ready(function() { 
+			$('a.tTip').tinyTips('title'); 
+			$('a.imgTip').tinyTips('<img src="./Imagenes/offline.png" /><br />Tooltip Imagen.'); 
+			$('img.tTip').tinyTips('title');
+			$('h1.tagline').tinyTips('tinyTips are totally awesome!');
+		});
+		</script>
+
+	</head>
+	
+	<body>
+	
+		<center><img class="logo" src="./Imagenes/logo.png"></center>
+	
+		<div id="divisor">
+			<img src="./Imagenes/divisor.png">
+		</div>
+	
+		<div id="cabezera">
+			<h1>Un nuevo programa para debatir sobre temas que nos afectan</h1>
+		</div>
+		
+		<div id="divisor">
+			<img src="./Imagenes/divisor.png">
+		</div>
+		
+		<div id="cuerpo">
+		
+			<p class="intro">Se trata de un proyecto de la creacion de un programa, en un futuro, multiplataforma, en el cual usuarios de diferentes partes del mundo puedan entrar y debatir sobre temas que nos afectan. Todos son debates predefinidos con anteriodidad y los cuales al finalizar el tiempo definido, anteriormente se elije un usuario a traves de una votacion, el cual luego es felicitado por su participacion. Con esto haremos un ranking con los mejores usuarios que debatieron en nuestro programa.</p>
+			<p class="intro">Todos los rankings, usuarios, debates y resultados estaran expuestos en la web por lo que se puede decir que el programa estara conectado a una base de datos y de ella a una pagina web oficial en donde se podran enterar de las ultimas noticias del proyeto y de los planes a futuro.</p>
+			<p class="intro" style="font-weight:700;">En las proximas semanas se lanzara una version beta de la aplicacion abierta a todo el publico para probar el sistema de conexion y la capacidad de nuestro servidor.</p>
+			
+			<div id="informacion" class="clearfix">
+			
+				<div id="cambios">
+					<p class="intro" style="font-weight:700;">Cambios en la version Beta 1.0:</p>
+					<p class="intro">* Soporte multiconexion</p>
+					<p class="intro">* Definicion de los temas de discusion Online por el servidor</p>
+					<p class="intro">* Posibilidad de asignar un nombre propio para chatear</p>
+				</div>
+				
+				<div id="noticias">
+					<p class="intronoticia" style="font-weight:700;">Ultimas noticias:</p>
+					
+					<div id="noticiapar">
+						<p class="titulo">Fix Programa v1.0</p>
+						<p class="noticia">Acabamos de sacar un fix necesario de ejecutar luego bajar el programa para que funcione. El link esta disponible debajo del boton de "Descargar"</p>
+						<p class="fecha">26/11/2012 - 20:20</p>
+					</div>
+					
+					<div id="noticia">
+						<p class="titulo">Lanzamiento Beta v1.0</p>
+						<p class="noticia">Acabamos de lanzar la version Beta 1.0 del programa para probar las conexiones y la cantidad de usuarios que podemos aceptar. Esperamos que les guste.</p>
+						<p class="fecha">26/11/2012 - 13:38</p>
+					</div>
+					
+					<!--<div id="noticiapar">
+						<p class="titulo">Probando 1... 2... 3...</p>
+						<p class="noticia">Estamos probando los estilos de las noticias :P</p>
+						<p class="fecha">26/11/2012 - 13:38</p>
+					</div>-->
+					
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div id="divisor" class="clearfix">
+			<img src="./Imagenes/divisor.png">
+		</div>
+		
+		<div id="pie" class="clearfix">
+			<div id="descargar">
+				<img src="./Imagenes/online.png" class="tTip" title="Estado: Online">
+				<a href="./Voces Diferentes Beta v1.0.rar"><img class="descargar tTip" src="./Imagenes/descargar.png" title="Version Beta 1.0"></a><br>
+				<a href="./Voces Diferentes Fix.Instalador v1.0.rar" class="fix">Descargar Fix v1.0</a>
+			</div>
+			<div id="compartir">
+				<div id="email"><a href="#"><img src="./Imagenes/email.png" class="tTip" title="Mandanos un mensaje"></a></div>
+				<div id="twitter"><a href="javascript: void(0);" onclick="window.open('http://twitter.com/home?status=Un%20nuevo%20programa%20de%20debates%20online%20con%20otras%20personas%20sobre%20temas%20que%20nos%20afectan.%20Yo%20ya%20entre,%20vas%20a%20venir?%20http://www.hurieta4.com.ar/chat/','ventanacompartir', 'toolbar=0, status=0, width=650, height=450')"><img src="./Imagenes/twitter.png" class="twitter tTip" title="Compartir en Twitter"></a></div>
+				<div id="facebook"><a href="javascript: void(0);" onclick="window.open('http://www.facebook.com/sharer.php?u=http://www.hurieta4.com.ar/chat/&t=Voces%20diferentes%20un%20sitio%20para%20hablar%20sobre%20temas%20que%20nos%20afectan','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');"><img src="./Imagenes/facebook.png" class="facebook tTip" title="Compartir en Facebook"></a></div>
+			</div>
+		</div>
+
+	</body>
+	
+</html>
